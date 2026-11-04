@@ -9,6 +9,8 @@ const titles = [
 const ratings = [6.9, 7.9, 7.0, 8.0, 7.3];
 const years = [2006, 2018, 2026, 2026, 2026];
 
+
+
 // 합계
 let sum = 0;
 
