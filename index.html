@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 영화 보드</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top">
+    <h1>내 영화 보드</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#board">보드</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="detail.html">상세</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>요즘 내가 고른 영화 다섯 편</h2>
+    <p>포스터 위에 마우스를 올려 보세요.</p>
+  </section>
+
+  <main>
+    <section class="board" id="board">
+      <article class="card">
+        <img
+          class="poster"
+          src="https://image.tmdb.org/t/p/w342/o1a5FULQTObsNbcgjapJtunpFzV.jpg"
+          alt="타짜 포스터"
+        >
+
+        <span class="badge">6.9</span>
+
+        <div class="info">
+          <h2>타짜</h2>
+          <p class="year">2006</p>
+          <p class="overview">도박판에 전부를 건 타짜들의 끝없는 욕망과 배신, 그리고 짜릿한 승부를 그린 범죄 스릴러 영화</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          class="poster"
+          src="https://image.tmdb.org/t/p/w342/xrlVhwi6OKMyQuDebpgaqU2LGju.jpg"
+          alt="보헤미안 랩소디 포스터"
+        >
+
+        <span class="badge">7.9</span>
+
+        <div class="info">
+          <h2>보헤미안 랩소디</h2>
+          <p class="year">2018</p>
+          <p class="overview">프레디 머큐리와 퀸이 세계적인 밴드로 성장하는 과정을 그린 음악 영화</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          class="poster"
+          src="https://image.tmdb.org/t/p/w342/28A1VUDML1RzENYNtIU1WkBLT9V.jpg"
+          alt="악마는 프라다를 입는다 2 포스터"
+        >
+
+        <span class="badge">7.0</span>
+
+        <div class="info">
+          <h2>악마는 프라다를 입는다 2</h2>
+          <p class="year">2026</p>
+          <p class="overview">패션 매거진 런웨이를 둘러싼 미란다와 앤디의 새로운 이야기를 그린 영화</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          class="poster"
+          src="https://image.tmdb.org/t/p/w342/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg"
+          alt="오디세이 포스터"
+        >
+
+        <span class="badge">8.0</span>
+
+        <div class="info">
+          <h2>오디세이</h2>
+          <p class="year">2026</p>
+          <p class="overview">트로이 전쟁 이후 고향으로 돌아가려는 오디세우스의 험난한 여정을 그린 판타지 모험 영화</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          class="poster"
+          src="https://image.tmdb.org/t/p/w342/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg"
+          alt="극장판 치이카와: 인어 섬의 비밀 포스터"
+        >
+
+        <span class="badge">7.3</span>
+
+        <div class="info">
+          <h2>극장판 치이카와: 인어 섬의 비밀</h2>
+          <p class="year">2026</p>
+          <p class="overview">특별한 섬에 초대된 치이카와와 친구들이 숨겨진 비밀을 마주하는 판타지 모험 애니메이션</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>이 보드에 대하여</h2>
+      <p>2651041 오시우, 그냥 재밌게 봤던 기억이 바로 난 영화를 받아 적었습니다</p>
+      <p>포스터와 영화 정보는 TMDB 검색 결과를 그대로 옮겼습니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
+      This product uses the TMDB API but is not endorsed or certified by TMDB.
+    </p>
+
+    <p>
+      포스터와 영화 정보: TMDB (https://www.themoviedb.org)
+    </p>
+  </footer>
+
+  <p id="stats"></p>
+  <script src="script.js"></script>
+</body>
+</html>
